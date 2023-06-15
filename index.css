@@ -1,0 +1,251 @@
+#circle-container {
+    width: 200px;
+    margin: 20px auto;
+}
+
+.q {
+    font-family: Helvetica, Arial, sans-serif;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #F6F6F6;
+    margin: 0 auto;
+    width: 800px;
+    border: none;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.q legend {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #F6F6F6;
+    font-size: 20px;
+}
+
+.q input[type="radio"]+label {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+
+.q input[type="radio"]+label span {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.3);
+    box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.3);
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.q input[type="radio"]+label span:hover {
+    background-color: #DCEEFA;
+    color: #000;
+}
+
+.q input[type="radio"]:checked+label span {
+    background-color: #249DD4;
+    color: #fff;
+}
+
+.q input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.q .button-space {
+    clear: both;
+    height: 27px;
+    padding-top: 20px;
+}
+
+.q .next {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+    border: solid 2px #249DD4;
+    color: #249DD4;
+    font-size: 16px;
+    padding: 2px 25px;
+    text-transform: uppercase;
+}
+
+.disabled {
+    display: none;
+}
+
+.end {
+    text-align: center;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 50px;
+    color: #047E3C;
+}
+
+/* Progress Bar */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #ecf0f1;
+    color: #444;
+    font-family: "Lato", Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.set-size {
+    font-size: 10em;
+}
+
+.charts-container:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.pie-wrapper {
+    height: 1em;
+    width: 1em;
+    float: left;
+    margin: 15px;
+    position: relative;
+}
+
+.pie-wrapper:nth-child(3n+1) {
+    clear: both;
+}
+
+.pie-wrapper .pie {
+    height: 100%;
+    width: 100%;
+    clip: rect(0, 1em, 1em, 0.5em);
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.pie-wrapper .pie .half-circle {
+    height: 100%;
+    width: 100%;
+    border: 0.1em solid #3498db;
+    border-radius: 50%;
+    clip: rect(0, 0.5em, 1em, 0);
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.pie-wrapper .label {
+    background: #34495e;
+    border-radius: 50%;
+    bottom: 0.4em;
+    color: #ecf0f1;
+    cursor: default;
+    display: block;
+    font-size: 0.25em;
+    left: 0.4em;
+    line-height: 2.8em;
+    position: absolute;
+    right: 0.4em;
+    text-align: center;
+    top: 0.4em;
+}
+
+.pie-wrapper .label .smaller {
+    color: #bdc3c7;
+    font-size: 0.45em;
+    padding-bottom: 20px;
+    vertical-align: super;
+}
+
+.pie-wrapper .shadow {
+    height: 100%;
+    width: 100%;
+    border: 0.1em solid #bdc3c7;
+    border-radius: 50%;
+}
+
+.pie-wrapper.style-2 .label {
+    background: none;
+    color: #7f8c8d;
+}
+
+.pie-wrapper.style-2 .label .smaller {
+    color: #bdc3c7;
+}
+
+.pie-wrapper.progress-30 .pie .half-circle {
+    border-color: #3498db;
+}
+
+.pie-wrapper.progress-30 .pie .left-side {
+    transform: rotate(108deg);
+}
+
+.pie-wrapper.progress-30 .pie .right-side {
+    display: none;
+}
+
+.pie-wrapper.progress-60 .pie {
+    clip: rect(auto, auto, auto, auto);
+}
+
+.pie-wrapper.progress-60 .pie .half-circle {
+    border-color: #9b59b6;
+}
+
+.pie-wrapper.progress-60 .pie .left-side {
+    transform: rotate(216deg);
+}
+
+.pie-wrapper.progress-60 .pie .right-side {
+    transform: rotate(180deg);
+}
+
+
+.pie-wrapper--solid {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.pie-wrapper--solid:before {
+    border-radius: 0 100% 100% 0/50%;
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+}
+
+.pie-wrapper--solid .label {
+    background: transparent;
+}
+
+/* Font-size */
+
+.pie-wrapper.progress-60 {
+    font-size: 100%;
+}
